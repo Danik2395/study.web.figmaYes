@@ -1,0 +1,46 @@
+*
+  font-family: 'Roboto', sans-serif
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-weight: 400
+
+  ul
+    list-style: none
+
+.body
+  display: grid
+  width: 100vw  
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(3, auto)
+  grid-template-areas: "header" "main" "footer"
+
+.header
+  grid-area: header
+
+.main
+  grid-area: main
+  display: flex
+  flex-direction: column
+  width: 100%
+  gap: 12rem
+
+.footer
+  grid-area: footer
+
+.logo
+  font-size: 4.313rem
+  margin-bottom: 0.2rem
+
+.buttonLink
+  display: flex
+  justify-content: center
+  align-items: center
+  text-decoration: none
+  color: inherit
+  border: none
+  cursor: pointer
+
+
+.list
+  list-style: none

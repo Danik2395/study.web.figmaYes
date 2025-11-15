@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yes.</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/SASS/index.css">
 </head>
 <body class="body">
     <header class="header">
@@ -13,7 +13,7 @@
                 <span>yes.</span>
             </a>
 
-            <ul class="shop header__menu">
+            <ul class="list header__menu">
                 <li><a href="#152" class="buttonLink header__link"><span>Sun</span></a></li>
                 <li><a href="#152" class="buttonLink header__link"><span>Optical</span></a></li>
                 <li><a href="#152" class="buttonLink header__link"><span>Fit guide</span></a></li>
@@ -48,30 +48,33 @@
                 <img src="/img/general_collection_head.png" alt="" class="collection__img_general">
             </div>
 
-            <div class="block block_small">
-                <img src="/img/shop_women_block.png" alt="" class="block__img">
-                <a href="#3489" class="buttonLink block__link"><span>SHOP WOMEN</span></a>
-            </div>
+            <div class="blockWrap">
+                <div class="block block_small">
+                    <img src="/img/shop_women_block.png" alt="" class="block__img">
+                    <a href="#3489" class="buttonLink block__link"><span>SHOP WOMEN</span></a>
+                </div>
 
-            <div class="block block_small">
-                <img src="/img/shop_men_block.png" alt="" class="block__img">
-                <a href="#3489" class="buttonLink block__link"><span>SHOP WOMEN</span></a>
+                <div class="block block_small">
+                    <img src="/img/shop_men_block.png" alt="" class="block__img">
+                    <a href="#3489" class="buttonLink block__link"><span>SHOP WOMEN</span></a>
+                </div>
             </div>
+            
         </article>
 
         <article class="collection collection_newInStock">
             <section class="collection__head">
-                <h2>New in stock</h2>
+                <h2 class="collection__title">New in stock</h2>
                 <a href="#328" class="buttonLink collection__seeLink"><span>SEE THE COLLECTION</span></a>
             </section>
 
-            <ul class="cards">
+            <ul class="list cards">
                 <li class="cards__item">
                     <a href="#3289" class="buttonLink card">
                         <img src="/img/noemi.png" alt="" class="card__img">
                         <span class="card__name">Noemi</span>
                         <span class="card__colors">2 colors</span>
-                        <span class="cards__price">$95</span>
+                        <span class="card__price">$95</span>
                     </a>
                 </li>
 
@@ -80,7 +83,7 @@
                         <img src="/img/hurst.png" alt="" class="card__img">
                         <span class="card__name">Hurst</span>
                         <span class="card__colors">2 colors</span>
-                        <span class="cards__price">$285</span>
+                        <span class="card__price">$285</span>
                     </a>
                 </li>
 
@@ -89,7 +92,7 @@
                         <img src="/img/louisa_nylon.png" alt="" class="card__img">
                         <span class="card__name">Louisa Nylon</span>
                         <span class="card__colors">2 colors</span>
-                        <span class="cards__price">$315</span>
+                        <span class="card__price">$315</span>
                     </a>
                 </li>
             </ul>
@@ -111,12 +114,12 @@
                 <a href="#328" class="buttonLink collection__seeLink"><span>SEE THE COLLECTION</span></a>
             </section>
 
-            <ul class="cards">
+            <ul class="list cards">
                 <li class="cards__item">
                     <a href="#3289" class="buttonLink card">
                         <img src="/img/saskia.png" alt="" class="card__img">
                         <span class="card__name">Saskia</span>
-                        <span class="cards__price">$115</span>
+                        <span class="card__price">$115</span>
                     </a>
                 </li>
 
@@ -125,7 +128,7 @@
                         <img src="/img/cynthia.png" alt="" class="card__img">
                         <span class="card__name">Cynthia</span>
                         <span class="card__colors">2 colors</span>
-                        <span class="cards__price">$95</span>
+                        <span class="card__price">$95</span>
                     </a>
                 </li>
 
@@ -134,16 +137,22 @@
                         <img src="/img/eimear.png" alt="" class="card__img">
                         <span class="card__name">Eimear</span>
                         <span class="card__colors">2 colors</span>
-                        <span class="cards__price">$105</span>
+                        <span class="card__price">$105</span>
                     </a>
                 </li>
             </ul>
 
-            <div class="block block_twoImg">
-                <img src="/img/for_sight_block.png" alt="" class="block__img block__img_first">
-                <a href="#1289" class="buttonLink block__link"><span>FOR SIGHT</span></a>
-                <img src="/img/bestsellers_nonsence_block.png" alt="" class="block__img block__img_second">
-            </div>
+            <div class="blockWrap">
+                <div class="block block_small">
+                    <img src="/img/for_sight_block.png" alt="" class="block__img block__img_first">
+                    <a href="#1289" class="buttonLink block__link"><span>FOR SIGHT</span></a>
+                </div>
+                
+                <div class="block block_small">
+                    <img src="/img/bestsellers_nonsence_block.png" alt="" class="block__img block__img_second">
+                </div>
+            </div>rap
+            
         </article>
 
         <article class="collection collection_ourBrands">
@@ -313,7 +322,7 @@
                 </svg>
             </div>
 
-            <ul class="footer__contacts">
+            <ul class="list footer__contacts">
                 <li class="footer__telephone">
                     <span>+31 657 485 73 26</span>
                 </li>

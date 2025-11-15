@@ -1,0 +1,49 @@
+
+.blockWrap
+  display: flex
+  flex-direction: row 
+  width: 100%
+
+.block
+  position: relative
+  display: inline-block
+  height: 38.75rem
+
+.block__link
+  position: absolute
+  bottom: 0
+  right: 0
+  font-size: 1.125rem
+  width: 17.5rem
+  height: 6.875rem
+  background-color: $block-link
+
+  &:hover
+    background-color: $block-link-hover
+  
+.block_textImg
+  position: relative
+  width: 100%
+  background-color: $background-general
+
+  .block__link
+    position: absolute
+    bottom: 0
+    left: 45rem
+
+  .block__description
+    position: absolute
+    left: 45rem
+    bottom: 11.875rem
+
+    .block__brand
+      margin-left: 0.2em
+      font-size: 1.1875rem
+    
+    .block__model
+      font-size: 4.375rem
+      margin-bottom: 1.2rem
+
+    .block__descriptionText
+      margin-left: 0.3em
+      font-size: 1.25rem
