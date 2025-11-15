@@ -6,135 +6,154 @@
     <title>yes.</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <header>
-        <nav class="headerNav">
+<body class="body">
+    <header class="header">
+        <nav class="header__nav">
             <a href="#298" class="buttonLink logo">
                 <span>yes.</span>
             </a>
 
-            <ul class="headerNav--shop">
-                <li><a href="#152" class="buttonLink headerNav--link"><span>Sun</span></a></li>
-                <li><a href="#152" class="buttonLink headerNav--link"><span>Optical</span></a></li>
-                <li><a href="#152" class="buttonLink headerNav--link"><span>Fit guide</span></a></li>
+            <ul class="shop header__menu">
+                <li><a href="#152" class="buttonLink header__link"><span>Sun</span></a></li>
+                <li><a href="#152" class="buttonLink header__link"><span>Optical</span></a></li>
+                <li><a href="#152" class="buttonLink header__link"><span>Fit guide</span></a></li>
             </ul>
 
-            <a href="#317" class="buttonLink" id="headerNav--customerCare"><span>Customer care</span></a>
+            <a href="#317" class="buttonLink" class="header__customerCare"><span>Customer care</span></a>
         </nav>
     </header>
 
-    <main>
-        <article class="collection collection--general">
-            <div class="collectionHead">
-                <h1>We treat your eyes with care</h1>
-                <a href="#8273" class="buttonLink seeLink"><span>SEE THE COLLECTION</span></a> <!-- todo: after arrow -->
-                <img src="/img/general_collection_head.png" alt="">
+    <main class="main">
+        <article class="collection collection_general">
+            <div class="collection__head">
+                <section class="collection__description">
+                    <h1 class="collection__title">We treat your eyes with care</h1>
+                    <a href="#8273" class="buttonLink seeLink seeLink_arrow">
+                        <span>SEE THE COLLECTION</span>
+                        <svg width="55" height="17" viewBox="0 0 55 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="seeLink__arrow">
+                            <g clip-path="url(#clip0_1_28)">
+                            <path d="M0.723694 8.5H54.2763" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M53.9145 8.49998C51.2609 8.26389 45.5921 6.37498 44.1447 0.708313" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M53.9145 8.5C51.2609 8.73609 45.5921 10.625 44.1447 16.2917" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath class="clip0_1_28">
+                            <rect width="55" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </section>
+                
+                <img src="/img/general_collection_head.png" alt="" class="collection__img_general">
             </div>
 
-            <div class="block shopWomen">
-                <img src="/img/shop_women_block.png" alt="">
-                <a href="#3489" class="buttonLink blockLink"><span>SHOP WOMEN</span></a>
+            <div class="block block_small">
+                <img src="/img/shop_women_block.png" alt="" class="block__img">
+                <a href="#3489" class="buttonLink block__link"><span>SHOP WOMEN</span></a>
             </div>
 
-            <div class="block shopMen">
-                <img src="/img/shop_men_block.png" alt="">
-                <a href="#3489" class="buttonLink blockLink"><span>SHOP WOMEN</span></a>
+            <div class="block block_small">
+                <img src="/img/shop_men_block.png" alt="" class="block__img">
+                <a href="#3489" class="buttonLink block__link"><span>SHOP WOMEN</span></a>
             </div>
         </article>
 
-        <article class="collection newInStock">
-            <div class="collectionHead">
+        <article class="collection collection_newInStock">
+            <section class="collection__head">
                 <h2>New in stock</h2>
-                <a href="#328" class="buttonLink seeLink"><span>SEE THE COLLECTION</span></a>
-            </div>
+                <a href="#328" class="buttonLink collection__seeLink"><span>SEE THE COLLECTION</span></a>
+            </section>
 
             <ul class="cards">
-                <li>
-                    <a href="#3289" class="cardlink">
-                        <img src="/img/noemi.png" alt="">
-                        <span class="card--name">Noemi</span>
-                        <span class="card--colors">2 colors</span>
-                        <span class="card--price">$95</span>
+                <li class="cards__item">
+                    <a href="#3289" class="buttonLink card">
+                        <img src="/img/noemi.png" alt="" class="card__img">
+                        <span class="card__name">Noemi</span>
+                        <span class="card__colors">2 colors</span>
+                        <span class="cards__price">$95</span>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#3289" class="cardlink">
-                        <img src="/img/hurst.png" alt="">
-                        <span class="card--name">Hurst</span>
-                        <span class="card--colors">2 colors</span>
-                        <span class="card--price">$285</span>
+                <li class="cards__item">
+                    <a href="#3289" class="buttonLink card">
+                        <img src="/img/hurst.png" alt="" class="card__img">
+                        <span class="card__name">Hurst</span>
+                        <span class="card__colors">2 colors</span>
+                        <span class="cards__price">$285</span>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#3289" class="cardlink">
-                        <img src="/img/louisa_nylon.png" alt="">
-                        <span class="card--name">Louisa Nylon</span>
-                        <span class="card--colors">2 colors</span>
-                        <span class="card--price">$315</span>
+                <li class="cards__item">
+                    <a href="#3289" class="buttonLink card">
+                        <img src="/img/louisa_nylon.png" alt="" class="card__img">
+                        <span class="card__name">Louisa Nylon</span>
+                        <span class="card__colors">2 colors</span>
+                        <span class="cards__price">$315</span>
                     </a>
                 </li>
             </ul>
 
-            <div class="block newInStock">
-                <img src="/img/new_in_stock_block.png" alt="">
-                <p>TIJN</p>
-                <h2>Mitchel</h2>
-                <p>All-time classic round shape</p>
-                <a href="#1289" class="buttonLink blockLink"><span>SHOP THIS MODEL</span></a>
+            <div class="block block_textImg">
+                <img src="/img/new_in_stock_block.png" alt="" class="block__img">
+                <section class="block__description">
+                    <p class="block__brand">TIJN</p>
+                    <h2 class="block__model">Mitchel</h2>
+                    <p class="block__descriptionText">All-time classic round shape</p>
+                </section>
+                <a href="#1289" class="buttonLink block__link"><span>SHOP THIS MODEL</span></a>
             </div>
         </article>
 
-        <article class="collection bestsellers">
-            <div class="collectionHead">
-                <h2>Bestsellers</h2>
-                <a href="#328" class="buttonLink seeLink"><span>SEE THE COLLECTION</span></a>
-            </div>
+        <article class="collection collection_bestsellers">
+            <section class="collection__head">
+                <h2 class="collection__title">Bestsellers</h2>
+                <a href="#328" class="buttonLink collection__seeLink"><span>SEE THE COLLECTION</span></a>
+            </section>
 
             <ul class="cards">
-                <li>
-                    <a href="#3289" class="cardlink">
-                        <img src="/img/saskia.png" alt="">
-                        <span class="card--name">Saskia</span>
-                        <span class="card--price">$115</span>
+                <li class="cards__item">
+                    <a href="#3289" class="buttonLink card">
+                        <img src="/img/saskia.png" alt="" class="card__img">
+                        <span class="card__name">Saskia</span>
+                        <span class="cards__price">$115</span>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#3289" class="cardlink">
-                        <img src="/img/cynthia.png" alt="">
-                        <span class="card--name">Cynthia</span>
-                        <span class="card--colors">2 colors</span>
-                        <span class="card--price">$95</span>
+                <li class="cards__item">
+                    <a href="#3289" class="buttonLink card">
+                        <img src="/img/cynthia.png" alt="" class="card__img">
+                        <span class="card__name">Cynthia</span>
+                        <span class="card__colors">2 colors</span>
+                        <span class="cards__price">$95</span>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#3289" class="cardlink">
-                        <img src="/img/eimear.png" alt="">
-                        <span class="card--name">Eimear</span>
-                        <span class="card--colors">2 colors</span>
-                        <span class="card--price">$105</span>
+                <li class="cards__item">
+                    <a href="#3289" class="buttonLink card">
+                        <img src="/img/eimear.png" alt="" class="card__img">
+                        <span class="card__name">Eimear</span>
+                        <span class="card__colors">2 colors</span>
+                        <span class="cards__price">$105</span>
                     </a>
                 </li>
             </ul>
 
-            <div class="block">
-                <img src="/img/for_sight_block.png" alt="">
-                <a href="#1289" class="buttonLink blockLink"><span>FOR SIGHT</span></a>
-                <img src="/img/bestsellers_nonsence_block.png" alt="">
+            <div class="block block_twoImg">
+                <img src="/img/for_sight_block.png" alt="" class="block__img block__img_first">
+                <a href="#1289" class="buttonLink block__link"><span>FOR SIGHT</span></a>
+                <img src="/img/bestsellers_nonsence_block.png" alt="" class="block__img block__img_second">
             </div>
         </article>
 
-        <article class="collection ourBrands">
-            <div class="collectionHead">
-                <h2>Our brands</h2>
-                <a href="#328" class="buttonLink seeLink"><span>SEE MORE</span></a>
-            </div>
+        <article class="collection collection_ourBrands">
+            <section class="collection__head">
+                <h2 class="collection__title">Our brands</h2>
+                <a href="#328" class="buttonLink collection__seeLink"><span>SEE MORE</span></a>
+            </section>
 
             <div class="brandNames">
-                <svg width="533" height="139" viewBox="0 0 533 139" fill="none" xmlns="http://www.w3.org/2000/svg" id="brandName--krewe">
+                <svg width="533" height="139" viewBox="0 0 533 139" fill="none" xmlns="http://www.w3.org/2000/svg" class="Names__krewe">
                     <g clip-path="url(#clip0_1_170)">
                     <path d="M39.6333 78.5056L23.4286 98.4746V137.042H0V0H23.4286V66.1718L74.9714 0H103.476L55.6429 60.6901L107.381 137.042H78.0952L39.6333 78.5056Z" fill="#FFBCBC"/>
                     <path d="M122.954 39.155H140.721L142.478 50.1184C145.862 45.9419 150.027 42.8095 154.973 40.7212C160.049 38.5024 165.646 37.3931 171.764 37.3931H181.526V58.5367H171.764C162.783 58.5367 156.145 60.4945 151.849 64.41C147.684 68.3255 145.602 73.6114 145.602 80.2677V137.042H122.954V39.155Z" fill="#FFBCBC"/>
@@ -143,13 +162,13 @@
                     <path d="M487.103 138.804C480.075 138.804 473.763 137.76 468.165 135.672C462.569 133.453 457.753 130.32 453.718 126.275C449.683 122.098 446.559 117.073 444.346 111.2C442.264 105.327 441.222 98.6705 441.222 91.2311V84.9663C441.222 77.5269 442.264 70.8705 444.346 64.9973C446.559 59.1241 449.683 54.1644 453.718 50.1184C457.753 45.9419 462.569 42.8095 468.165 40.7212C473.763 38.5024 480.075 37.3931 487.103 37.3931C501.291 37.3931 512.484 41.7654 520.684 50.51C528.884 59.2545 532.984 71.7841 532.984 88.0987V95.7339H463.87C464.521 103.956 466.799 109.895 470.703 113.549C474.608 117.073 480.075 118.835 487.103 118.835C494.002 118.835 499.013 117.661 502.137 115.311C505.391 112.832 507.539 109.96 508.58 106.697H532.008C530.968 111.266 529.34 115.507 527.127 119.423C524.915 123.338 521.987 126.732 518.342 129.603C514.697 132.474 510.272 134.759 505.065 136.455C499.859 138.021 493.872 138.804 487.103 138.804ZM487.103 57.3621C480.465 57.3621 475.259 58.9936 471.484 62.2564C467.71 65.5193 465.302 70.6748 464.261 77.7226H509.946C509.035 70.4137 506.627 65.1931 502.722 62.0607C498.949 58.9283 493.742 57.3621 487.103 57.3621Z" fill="#FFBCBC"/>
                     </g>
                     <defs>
-                    <clipPath id="clip0_1_170">
+                    <clipPath class="clip0_1_170">
                     <rect width="533" height="139" fill="white"/>
                     </clipPath>
                     </defs>
                 </svg>
 
-                <svg width="893" height="121" viewBox="0 0 893 121" fill="none" xmlns="http://www.w3.org/2000/svg" id="brandName--carla">
+                <svg width="893" height="121" viewBox="0 0 893 121" fill="none" xmlns="http://www.w3.org/2000/svg" class="brandNames__carla">
                     <g clip-path="url(#clip0_1_180)">
                     <path d="M51.7451 120.538C44.0373 120.538 36.9998 119.311 30.6325 116.859C24.3769 114.406 19.015 110.782 14.5466 105.988C10.1901 101.194 6.78302 95.3966 4.32547 88.5957C1.8679 81.6832 0.63913 73.7674 0.63913 64.8482V56.1519C0.63913 47.3441 1.8679 39.5398 4.32547 32.7389C6.78302 25.8265 10.2459 19.9732 14.7142 15.1792C19.1825 10.385 24.5445 6.76162 30.8 4.30882C37.1673 1.74455 44.1491 0.462402 51.7451 0.462402C58.5593 0.462402 64.7032 1.46582 70.1768 3.47265C75.7622 5.47947 80.5655 8.211 84.587 11.6672C88.6085 15.0119 91.848 18.9698 94.3055 23.541C96.8748 28.0006 98.6065 32.7946 99.4995 37.9232H77.3819C76.4883 35.3589 75.3154 32.9619 73.8631 30.7321C72.411 28.3908 70.6237 26.384 68.5012 24.7116C66.3788 23.0393 63.9212 21.7014 61.1285 20.698C58.3359 19.6945 55.2081 19.1928 51.7451 19.1928C42.8086 19.1928 35.5476 22.2588 29.9622 28.3908C24.4886 34.5228 21.7517 43.7765 21.7517 56.1519V64.8482C21.7517 70.9801 22.4779 76.3875 23.93 81.0701C25.494 85.6412 27.5606 89.4876 30.1298 92.6093C32.8107 95.6196 35.9944 97.9051 39.6807 99.466C43.3671 101.027 47.3885 101.807 51.7451 101.807C58.5593 101.807 64.1446 99.8005 68.5012 95.7868C72.8577 91.7732 75.8181 86.4216 77.3819 79.7322H99.4995C98.6065 85.6412 96.8748 91.1042 94.3055 96.1213C91.848 101.027 88.5527 105.319 84.4194 108.998C80.398 112.566 75.6505 115.409 70.1768 117.527C64.7032 119.534 58.5593 120.538 51.7451 120.538Z" fill="#FFBCBC"/>
                     <path d="M138.026 120.538C128.977 120.538 122.107 118.308 117.416 113.848C112.724 109.389 110.378 103.201 110.378 95.2852C110.378 90.9371 111.048 87.0349 112.389 83.5787C113.841 80.011 116.075 77.0565 119.091 74.7152C122.219 72.2624 126.185 70.4227 130.988 69.1964C135.904 67.8585 141.88 67.1896 148.917 67.1896H162.992V62.1725C162.992 58.1589 161.875 55.1486 159.641 53.1418C157.519 51.0234 153.944 49.9643 148.917 49.9643C144.225 49.9643 140.818 50.8562 138.696 52.6401C136.574 54.4239 135.289 56.7652 134.842 59.664H113.729C114.176 52.194 117.192 46.0621 122.778 41.268C128.475 36.3624 137.188 33.9097 148.917 33.9097C160.088 33.9097 168.466 36.4739 174.051 41.6025C179.637 46.731 182.429 53.5877 182.429 62.1725V119.033H167.181L165.171 107.493C162.266 111.73 158.468 114.963 153.776 117.193C149.197 119.423 143.946 120.538 138.026 120.538ZM141.377 104.483C144.505 104.483 147.353 103.981 149.922 102.978C152.603 101.863 154.893 100.413 156.792 98.6299C158.692 96.7345 160.2 94.6163 161.317 92.275C162.433 89.9337 162.992 87.4251 162.992 84.7493V82.2408H148.917C142.215 82.2408 137.523 83.3557 134.842 85.5855C132.161 87.8154 130.821 90.8255 130.821 94.6163C130.821 97.6265 131.715 100.024 133.502 101.807C135.401 103.591 138.026 104.483 141.377 104.483Z" fill="#FFBCBC"/>
@@ -164,14 +183,14 @@
                     <path d="M842.448 35.4148H857.696L859.204 44.78C862.109 41.2123 865.684 38.5365 869.928 36.7527C874.284 34.8573 879.089 33.9097 884.338 33.9097H892.716V51.9711H884.338C876.63 51.9711 870.933 53.6435 867.247 56.9882C863.673 60.3329 861.885 64.8483 861.885 70.5343V119.033H842.448V35.4148Z" fill="#FFBCBC"/>
                     </g>
                     <defs>
-                    <clipPath id="clip0_1_180">
+                    <clipPath class="clip0_1_180">
                     <rect width="893" height="121" fill="white"/>
                     </clipPath>
                     </defs>
                 </svg>
 
 
-                <svg width="1037" height="146" viewBox="0 0 1037 146" fill="none" xmlns="http://www.w3.org/2000/svg" id="brandName--modern">
+                <svg width="1037" height="146" viewBox="0 0 1037 146" fill="none" xmlns="http://www.w3.org/2000/svg" class="brandNames__modern">
                     <g clip-path="url(#clip0_1_199)">
                     <path d="M25.9841 38.4L19.4177 21.44V112H0.199219V0H29.027L54.0111 60.64L78.9952 0H107.502V112H88.2841V21.28L81.5577 38.4L63.4602 82.4H44.2417L25.9841 38.4Z" fill="#FFBCBC"/>
                     <path d="M162.687 113.44C150.622 113.44 141.173 110.027 134.34 103.2C127.613 96.3734 124.25 86.8268 124.25 74.5601V69.4401C124.25 63.3601 125.105 57.9201 126.812 53.1201C128.628 48.3201 131.191 44.2668 134.5 40.9601C137.917 37.5468 141.974 34.9868 146.671 33.2801C151.37 31.4668 156.708 30.5601 162.687 30.5601C174.753 30.5601 184.148 33.9734 190.874 40.8001C197.708 47.6268 201.124 57.1734 201.124 69.4401V74.5601C201.124 80.6401 200.217 86.0801 198.401 90.8801C196.694 95.6801 194.131 99.7868 190.714 103.2C187.405 106.507 183.347 109.067 178.542 110.88C173.845 112.587 168.56 113.44 162.687 113.44ZM162.687 96.1601C168.773 96.1601 173.417 94.4001 176.62 90.8801C179.931 87.3601 181.585 81.9201 181.585 74.5601V69.4401C181.585 62.1868 179.877 56.8001 176.46 53.2801C173.151 49.6534 168.56 47.8401 162.687 47.8401C156.601 47.8401 151.903 49.6001 148.593 53.1201C145.39 56.6401 143.789 62.0801 143.789 69.4401V74.5601C143.789 81.8134 145.444 87.2534 148.753 90.8801C152.171 94.4001 156.815 96.1601 162.687 96.1601Z" fill="#FFBCBC"/>
@@ -187,13 +206,13 @@
                     <path d="M986.66 112L954.469 32H974.649L996.43 89.28L1016.93 32H1036.15L993.707 144H974.489L986.66 112Z" fill="#FFBCBC"/>
                     </g>
                     <defs>
-                    <clipPath id="clip0_1_199">
+                    <clipPath class="clip0_1_199">
                     <rect width="1037" height="146" fill="white"/>
                     </clipPath>
                     </defs>
                 </svg>
 
-                <svg width="389" height="137" viewBox="0 0 389 137" fill="none" xmlns="http://www.w3.org/2000/svg" id="brandName--tijn">
+                <svg width="389" height="137" viewBox="0 0 389 137" fill="none" xmlns="http://www.w3.org/2000/svg" class="brandNames__tijn">
                     <g clip-path="url(#clip0_1_222)">
                     <path d="M0 0H106.443V20.4535H64.8333V135.07H41.6095V20.4535H0V0Z" fill="#FFBCBC"/>
                     <path d="M123.876 0H147.1V135.07H123.876V0Z" fill="#FFBCBC"/>
@@ -201,7 +220,7 @@
                     <path d="M309.993 46.3099L301.865 28.7507V135.07H278.641V0H311.155L357.602 88.7606L365.731 106.513V0H388.955V135.07H356.441L309.993 46.3099Z" fill="#FFBCBC"/>
                     </g>
                     <defs>
-                    <clipPath id="clip0_1_222">
+                    <clipPath class="clip0_1_222">
                     <rect width="389" height="137" fill="white"/>
                     </clipPath>
                     </defs>
@@ -210,108 +229,114 @@
             </div>
 
             <section class="aboutUs">
-                <h2>Who are we?</h2>
-                    <p>
-                        Apologies if you were looking for an ordinary optical store. We've hand-picked the unique brands from all over the world to give you the special look for your everyday life.
-                    </p>
+                <h2 class="aboutUs__title">Who are we?</h2>
+                <p class="aboutUs__text">
+                    Apologies if you were looking for an ordinary optical store. We've hand-picked the unique brands from all over the world to give you the special look for your everyday life.
+                </p>
 
-                    <p>
-                        Our glasses will have you looking great and feeling better. We work with independent brands who use the highest-grade of materials, demonstrating detail and craftsmanship in every single pair. A wide range of styles reflect the diversity of our clients and are made to suit different face shapes.
-                    </p>
+                <p class="aboutUs__text">
+                    Our glasses will have you looking great and feeling better. We work with independent brands who use the highest-grade of materials, demonstrating detail and craftsmanship in every single pair. A wide range of styles reflect the diversity of our clients and are made to suit different face shapes.
+                </p>
 
-                    <img src="/img/about_us_nonsence.png" alt="">
+                <img src="/img/about_us_nonsence.png" alt="" class="aboutUs__img">
             </section>
         </article>
     </main>
 
-    <footer>
-        <div class="footerTitle">
+    <footer class="footer">
+        <div class="footer__title">
             <a href="#298" class="buttonLink logo">
                 <span>yes.</span>
             </a>
 
-            <span>We treat your eyes with care</span>
+            <span class="footer__slogan">We treat your eyes with care</span>
         </div>
 
-        <nav class="footerNav">
-            <div class="footerNav--shop">
-                <h3>Shop</h3>
+        <nav class="footer__nav">
+            <div class="footer__shop">
+                <h3 class="footer__navTitle">Shop</h3>
                 <ul>
-                    <li><a href="#2937" class="buttonLink footerNav--link"><span>Sun</span></a></li>
-                    <li><a href="#2937" class="buttonLink footerNav--link"><span>Optical</span></a></li>
-                    <li><a href="#2937" class="buttonLink footerNav--link"><span>Brands</span></a></li>
+                    <li><a href="#2937" class="buttonLink footer__link"><span>Sun</span></a></li>
+                    <li><a href="#2937" class="buttonLink footer__link"><span>Optical</span></a></li>
+                    <li><a href="#2937" class="buttonLink footer__link"><span>Brands</span></a></li>
                 </ul>
             </div>
 
-            <div class="footerNav--customerCare">
-                <h3>Custimer care</h3>
+            <div class="footerNav__customerCare">
+                <h3 class="footer__navTitle">Custimer care</h3>
                 <ul>
-                    <li><a href="#2937" class="buttonLink footerNav--link"><span>FAQ</span></a></li>
-                    <li><a href="#2937" class="buttonLink footerNav--link"><span>Shipping and returns</span></a></li>
-                    <li><a href="#2937" class="buttonLink footerNav--link"><span>Fit guide</span></a></li>
+                    <li><a href="#2937" class="buttonLink footer__link"><span>FAQ</span></a></li>
+                    <li><a href="#2937" class="buttonLink footer__link"><span>Shipping and returns</span></a></li>
+                    <li><a href="#2937" class="buttonLink footer__link"><span>Fit guide</span></a></li>
                 </ul>
             </div>
 
-            <div class="footerNav--shop">
-                <h3>Info</h3>
+            <div class="footer__info">
+                <h3 class="footer__navTitle">Info</h3>
                 <ul>
-                    <li><a href="#2937" class="buttonLink footerNav--link"><span>Terms and conditions</span></a></li>
-                    <li><a href="#2937" class="buttonLink footerNav--link"><span>Optical</span></a></li>
-                    <li><a href="#2937" class="buttonLink footerNav--link"><span>Privacy policy</span></a></li>
+                    <li><a href="#2937" class="buttonLink footer__link"><span>Terms and conditions</span></a></li>
+                    <li><a href="#2937" class="buttonLink footer__link"><span>Optical</span></a></li>
+                    <li><a href="#2937" class="buttonLink footer__link"><span>Privacy policy</span></a></li>
                 </ul>
             </div>
         </nav>
 
-        <div class="contactInformation">
-            <p>
+        <div class="footer__contactInformation">
+            <p class="footer__slogan">
                 No spam, just pure inspiration and good news
             </p>
 
-            <div class="somethingForward">
-                <span>Some Text</span>
-                <svg width="30" height="10" viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1_286)" id="someTextArrow">
+            <div class="footer__something">
+                <span class="footer__someText">Some Text</span>
+                <svg width="30" height="10" viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__somethingtArrow">
+                    <g clip-path="url(#clip0_1_286)" class="someTextArrow">
                     <path d="M1.19995 5H28.7999" stroke="#3B3B3B" stroke-linecap="round"/>
                     <path d="M28.8 5L25.2 1.25" stroke="#3B3B3B"/>
                     <path d="M28.8 5L25.2 8.75" stroke="#3B3B3B"/>
                     </g>
                     <defs>
-                    <clipPath id="clip0_1_286">
+                    <clipPath class="clip0_1_286">
                     <rect width="30" height="10" fill="white"/>
                     </clipPath>
                     </defs>
                 </svg>
             </div>
 
-            <div class="socialMedia">
+            <div class="footer__socialMedia">
                 <span>We are always close</span>
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" id="instagramLogo">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__instagramLogo">
                     <path d="M26.1836 10.3811C26.171 9.43435 25.9938 8.49704 25.6598 7.61107C25.3703 6.86376 24.928 6.18507 24.3613 5.61836C23.7946 5.05165 23.1159 4.60939 22.3686 4.31982C21.494 3.99152 20.5701 3.814 19.6361 3.79482C18.4336 3.74107 18.0523 3.72607 14.9998 3.72607C11.9473 3.72607 11.5561 3.72607 10.3623 3.79482C9.42879 3.81414 8.50528 3.99166 7.63109 4.31982C6.88367 4.60919 6.20487 5.05138 5.63813 5.61812C5.0714 6.18485 4.62921 6.86365 4.33984 7.61107C4.01088 8.48499 3.83375 9.40871 3.81609 10.3423C3.76234 11.5461 3.74609 11.9273 3.74609 14.9798C3.74609 18.0323 3.74609 18.4223 3.81609 19.6173C3.83484 20.5523 4.01109 21.4748 4.33984 22.3511C4.62969 23.0983 5.07221 23.7768 5.63914 24.3433C6.20606 24.9098 6.88492 25.3518 7.63234 25.6411C8.50414 25.9826 9.42781 26.1728 10.3636 26.2036C11.5673 26.2573 11.9486 26.2736 15.0011 26.2736C18.0536 26.2736 18.4448 26.2736 19.6386 26.2036C20.5725 26.1852 21.4965 26.0081 22.3711 25.6798C23.1182 25.3899 23.7967 24.9475 24.3634 24.3809C24.9301 23.8142 25.3724 23.1357 25.6623 22.3886C25.9911 21.5136 26.1673 20.5911 26.1861 19.6548C26.2398 18.4523 26.2561 18.0711 26.2561 15.0173C26.2536 11.9648 26.2536 11.5773 26.1836 10.3811ZM14.9923 20.7523C11.7998 20.7523 9.21359 18.1661 9.21359 14.9736C9.21359 11.7811 11.7998 9.19482 14.9923 9.19482C16.525 9.19482 17.9948 9.80366 19.0785 10.8874C20.1623 11.9711 20.7711 13.441 20.7711 14.9736C20.7711 16.5062 20.1623 17.976 19.0785 19.0598C17.9948 20.1435 16.525 20.7523 14.9923 20.7523ZM21.0011 10.3286C20.2548 10.3286 19.6536 9.72607 19.6536 8.98107C19.6536 8.8042 19.6884 8.62906 19.7561 8.46565C19.8238 8.30224 19.923 8.15376 20.0481 8.02869C20.1732 7.90362 20.3216 7.80441 20.485 7.73672C20.6485 7.66904 20.8236 7.6342 21.0005 7.6342C21.1773 7.6342 21.3525 7.66904 21.5159 7.73672C21.6793 7.80441 21.8278 7.90362 21.9529 8.02869C22.0779 8.15376 22.1771 8.30224 22.2448 8.46565C22.3125 8.62906 22.3473 8.8042 22.3473 8.98107C22.3473 9.72607 21.7448 10.3286 21.0011 10.3286Z" fill="black"/>
                     <path d="M14.992 18.7277C17.0652 18.7277 18.7458 17.0471 18.7458 14.974C18.7458 12.9008 17.0652 11.2202 14.992 11.2202C12.9189 11.2202 11.2383 12.9008 11.2383 14.974C11.2383 17.0471 12.9189 18.7277 14.992 18.7277Z" fill="black"/>
                 </svg>
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" id="facebookLogo">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__facebookLogo">
                     <path d="M16.7453 26.2465V16.0015H20.2016L20.7153 11.9902H16.7453V9.43521C16.7453 8.27771 17.0678 7.48521 18.7291 7.48521H20.8341V3.90896C19.8099 3.7992 18.7804 3.7462 17.7503 3.75021C14.6953 3.75021 12.5978 5.61521 12.5978 9.03896V11.9827H9.16406V15.994H12.6053V26.2465H16.7453Z" fill="black"/>
                 </svg>
             </div>
 
-            <ul class="contacts">
-                <li id="tel">
+            <ul class="footer__contacts">
+                <li class="footer__telephone">
                     <span>+31 657 485 73 26</span>
                 </li>
 
-                <li id="email">
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRdqRFlTLSRfqtQnLDQtrJnwWhtmlckVWTnjgXBKdWXLqxMdmVFvHqvvtPWCqtzggqZkTj" class="buttonLink"><span>hello@yesforeyes.com</span></a>
+                <li class="footer__email">
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRdqRFlTLSRfqtQnLDQtrJnwWhtmlckVWTnjgXBKdWXLqxMdmVFvHqvvtPWCqtzggqZkTj" class="buttonLink footer__emailLink"><span>hello@yesforeyes.com</span></a>
                 </li>
             </ul>
         </div>
 
-        <div class="credits">
-           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="copyright">
-                <path d="M10 1.25C5.16797 1.25 1.25 5.16797 1.25 10C1.25 14.832 5.16797 18.75 10 18.75C14.832 18.75 18.75 14.832 18.75 10C18.75 5.16797 14.832 1.25 10 1.25ZM10 17.2656C5.98828 17.2656 2.73438 14.0117 2.73438 10C2.73438 5.98828 5.98828 2.73438 10 2.73438C14.0117 2.73438 17.2656 5.98828 17.2656 10C17.2656 14.0117 14.0117 17.2656 10 17.2656ZM10.1094 6.86133C11.1445 6.86133 11.8477 7.52148 11.9258 8.49023C11.9316 8.57227 12 8.63477 12.082 8.63477H13.1895C13.2402 8.63477 13.2812 8.59375 13.2812 8.54297C13.2812 6.84961 11.9453 5.66406 10.1035 5.66406C7.95703 5.66406 6.71875 7.11328 6.71875 9.50781V10.5293C6.71875 12.9062 7.95703 14.3359 10.1035 14.3359C11.9395 14.3359 13.2812 13.1875 13.2812 11.5742C13.2812 11.5234 13.2402 11.4824 13.1895 11.4824H12.0801C11.998 11.4824 11.9316 11.5449 11.9238 11.625C11.8418 12.5254 11.1406 13.1445 10.1074 13.1445C8.83203 13.1445 8.11328 12.209 8.11328 10.5352V9.50781C8.11523 7.80859 8.83594 6.86133 10.1094 6.86133Z" fill="black"/>
-            </svg><P>2020 Yes for Eyes</P>
-            <p>Designed and built by Margarita</p>
+        <div class="footer__credits">
+
+            <div class="footer__brandCopyright">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__copyrightSymbol">
+                    <path d="M10 1.25C5.16797 1.25 1.25 5.16797 1.25 10C1.25 14.832 5.16797 18.75 10 18.75C14.832 18.75 18.75 14.832 18.75 10C18.75 5.16797 14.832 1.25 10 1.25ZM10 17.2656C5.98828 17.2656 2.73438 14.0117 2.73438 10C2.73438 5.98828 5.98828 2.73438 10 2.73438C14.0117 2.73438 17.2656 5.98828 17.2656 10C17.2656 14.0117 14.0117 17.2656 10 17.2656ZM10.1094 6.86133C11.1445 6.86133 11.8477 7.52148 11.9258 8.49023C11.9316 8.57227 12 8.63477 12.082 8.63477H13.1895C13.2402 8.63477 13.2812 8.59375 13.2812 8.54297C13.2812 6.84961 11.9453 5.66406 10.1035 5.66406C7.95703 5.66406 6.71875 7.11328 6.71875 9.50781V10.5293C6.71875 12.9062 7.95703 14.3359 10.1035 14.3359C11.9395 14.3359 13.2812 13.1875 13.2812 11.5742C13.2812 11.5234 13.2402 11.4824 13.1895 11.4824H12.0801C11.998 11.4824 11.9316 11.5449 11.9238 11.625C11.8418 12.5254 11.1406 13.1445 10.1074 13.1445C8.83203 13.1445 8.11328 12.209 8.11328 10.5352V9.50781C8.11523 7.80859 8.83594 6.86133 10.1094 6.86133Z" fill="black"/>
+                </svg>
+                <P>2020 Yes for Eyes</P>
+            </div>
+           
+
+            <p class="footer__designerCredit">Designed and built by Margarita</p>
             
-            <p>
+            <p class="footer__creditLinks">
                 Photo materials belong to
                 <a href="#krewe" class="buttonLink creditLink"><span>Krewe</span></a>,
                 <a href="#carla" class="buttonLink creditLink"><span>Carla Colour</span></a>,
@@ -320,7 +345,7 @@
                 <a href="#unsplash" class="buttonLink creditLink"><span>Unsplash</span></a>
             </p>
 
-            <p>
+            <p class="footer__disclaimer">
                 This site is a design concept and not meant for commercial purposes. I don't own or sell any goods displayed on this site.
             </p>
         </div>
