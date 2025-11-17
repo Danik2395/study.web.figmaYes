@@ -1,10 +1,11 @@
+@use 'variables'
 
 .header
   align-self: top
   width: 100%
   height: 5.125rem
-  border-top: $border-general
-  border-bottom: $border-general
+  border-top: variables.$border-general
+  border-bottom: variables.$border-general
   
   
 .header__nav
@@ -21,9 +22,9 @@
   flex-direction: row
 
   > :first-child
-    border-left: $border-general
+    border-left: variables.$border-general
 
 .header__link
   width: 11.438rem
   height: 5rem
-  border-right: $border-general
+  border-right: variables.$border-general
