@@ -1,0 +1,50 @@
+@use 'variables'
+    
+.footer__wrap_right
+  font-size: 1.125rem
+  display: flex
+  flex-direction: column
+  gap: 1.0625rem
+  padding: 2.8125rem 8.125rem 2.875rem 2.625rem
+  margin-right: auto
+  border-left: variables.$border-general
+
+  .footer__slogan
+    width: 16.875rem
+
+  .seeLink
+    justify-content: flex-start
+    font-size: 1.25rem
+    width: 19.8125rem
+    margin-bottom: 1.5625rem
+
+    .seeLink__text
+      font-weight: 600
+
+    .seeLink__arrow
+      margin-left: .625rem 
+
+    &:hover .seeLink__arrow
+      margin-left: 1.25rem
+      
+
+.footer__socialMedia
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+
+  .footer__slogan
+    width: unset
+    margin-right: auto
+
+  .footer__instagramLogo
+    margin-right: 1.0625rem
+
+.footer__contacts
+  display: flex
+  flex-direction: column
+  gap: 1.0625rem
+
+  .footer__telephone
+    font-size: 1.0625rem
