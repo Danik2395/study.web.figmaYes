@@ -98,9 +98,12 @@
 
 .seeLink {
   font-size: 1.0625rem;
+}
+.seeLink:hover {
   text-decoration: underline;
   text-underline-offset: 0.3125rem;
 }
+
 .seeLink_arrow {
   width: unset;
   height: unset;
@@ -258,7 +261,7 @@
 .collection_general .collection__head {
   position: relative;
   padding: unset;
-  margin: 5.3125rem 9.375rem 13.75rem 8.125rem;
+  margin: 5.3125rem 7.3125rem 13.75rem 8.125rem;
   border: none;
 }
 .collection_general .collection__head .collection__description {
@@ -274,7 +277,7 @@
   font-weight: 400;
 }
 .collection_general .collection__head .collection__description .seeLink {
-  margin-left: 1.25rem;
+  margin-left: 0.9375rem;
 }
 .collection_general .collection__head .collection__description .seeLink .seeLink__arrow {
   margin-left: 0.9375rem;
