@@ -1,11 +1,14 @@
 @use 'variables'
 
 .header
-  align-self: top
+  align-self: start
   width: 100%
-  height: 5.125rem
   border-top: variables.$border-general
   border-bottom: variables.$border-general
+
+  .logo
+    line-height: 1
+    margin-bottom: auto
   
   
 .header__nav
@@ -17,14 +20,34 @@
   height: 100%
   padding: 0 3.5em 0 3.5rem
 
+  > :last-child
+    border: unset
+
 .header__menu
   display: flex
   flex-direction: row
+  perspective: 800px
 
-  > :first-child
-    border-left: variables.$border-general
+  > 
+    :first-child
+      border-left: variables.$border-general
+
+
+  > *
+
+    > * > *
+
+      transform-style: preserve-3d
+      transition: all 0.1s
+
+    &:hover > * > *
+      transform: translate3d(5px, -2px, 10px)
+      text-shadow: -5.06px 2.03px 3px transparentize(variables.$block-link, 0.2)
+
+  
 
 .header__link
+  font-size: 1.375rem
   width: 11.438rem
   height: 5rem
   border-right: variables.$border-general

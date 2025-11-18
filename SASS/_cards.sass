@@ -8,15 +8,28 @@
   padding: 0 1.25em 0 1.25rem
   margin-bottom: 12.1875rem
 
-.card
-  display: flex
-  flex-flow: column
-  gap: 1em
-
 .card__price
   font-weight: 700
 
 .card__name
   @extend .card__price
-  font-size: 1.25rem
+  font-size: 1.25rem  
+
+.card
+  display: flex
+  flex-flow: column
+  gap: 1em
+  perspective: 50rem
+
+  > *
+    transform-style: preserve-3d
+    transition: transform 0.5s
+
+  &:hover 
+
+    .card__img
+      transform: translateZ(2.5rem)
+
+    .card__price, .card__name, .card__colors
+      transform: translateZ(1.25rem)
 

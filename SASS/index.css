@@ -76,7 +76,6 @@
 
 .logo {
   font-size: 4.313rem;
-  margin-bottom: 0.2rem;
 }
 
 .buttonLink {
@@ -99,12 +98,9 @@
 
 .seeLink {
   font-size: 1.0625rem;
-}
-.seeLink:hover {
   text-decoration: underline;
   text-underline-offset: 0.3125rem;
 }
-
 .seeLink_arrow {
   width: unset;
   height: unset;
@@ -117,11 +113,14 @@
 }
 
 .header {
-  align-self: top;
+  align-self: start;
   width: 100%;
-  height: 5.125rem;
   border-top: 0.125rem solid #000000;
   border-bottom: 0.125rem solid #000000;
+}
+.header .logo {
+  line-height: 1;
+  margin-bottom: auto;
 }
 
 .header__nav {
@@ -133,16 +132,29 @@
   height: 100%;
   padding: 0 3.5em 0 3.5rem;
 }
+.header__nav > :last-child {
+  border: unset;
+}
 
 .header__menu {
   display: flex;
   flex-direction: row;
+  perspective: 800px;
 }
 .header__menu > :first-child {
   border-left: 0.125rem solid #000000;
 }
+.header__menu > * > * > * {
+  transform-style: preserve-3d;
+  transition: all 0.1s;
+}
+.header__menu > *:hover > * > * {
+  transform: translate3d(5px, -2px, 10px);
+  text-shadow: -5.06px 2.03px 3px rgba(255, 188, 188, 0.8);
+}
 
 .header__link {
+  font-size: 1.375rem;
   width: 11.438rem;
   height: 5rem;
   border-right: 0.125rem solid #000000;
@@ -218,18 +230,29 @@
   margin-bottom: 12.1875rem;
 }
 
-.card {
-  display: flex;
-  flex-flow: column;
-  gap: 1em;
-}
-
 .card__price, .card__name {
   font-weight: 700;
 }
 
 .card__name {
   font-size: 1.25rem;
+}
+
+.card {
+  display: flex;
+  flex-flow: column;
+  gap: 1em;
+  perspective: 50rem;
+}
+.card > * {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.card:hover .card__img {
+  transform: translateZ(2.5rem);
+}
+.card:hover .card__price, .card:hover .card__name, .card:hover .card__colors {
+  transform: translateZ(1.25rem);
 }
 
 .collection_general .collection__head {

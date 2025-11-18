@@ -1,5 +1,12 @@
 @use 'variables'
-  
+@use 'sass:string'
+
+// @media (min-width: 1440px) and (max-width: 6000px)
+//   :root
+//     font-size: string.unquote("calc(16px + 40 * (100vw - 1440px) / 6000)")
+
+// string.unquote("calc(16px + 40 * (100 - 1440px) / 6000)")
+
 *
   font-family: 'Roboto', sans-serif
   box-sizing: border-box
@@ -9,7 +16,6 @@
 
   .list
     list-style: none
-
 
 .body
   display: grid
@@ -32,7 +38,6 @@
 
 .logo
   font-size: 4.313rem
-  margin-bottom: 0.2rem
 
 .buttonLink
   display: flex
@@ -52,7 +57,7 @@
   font-size: 1.0625rem
 
   &:hover
-   @include variables.underlineHover
+  @include variables.underlineHover
 
 .seeLink_arrow
   width: unset
